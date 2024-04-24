@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/templates/centro-sao-luis-1500x1000.jpg);
+    background-size: cover;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.imagem {
+    width: 17vw;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 300px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    font-size: 1.6vw;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
+
+.formulario {
+    display: flex;
+    gap: 40vw;
+    width: 27vw;
+    margin: 3% 0 0 3%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.formulario__conteudo {
+    font-family: "Montserrat", sans-serif;
+    padding: 2vw;
+    font-size: 1.8vw;
+    color: white;
+}
+
+form input {
+    outline: unset;
+    width: 22vw;
+    height: 6vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 3vh;
+    font-size: 1.2vw;
+}
+
+a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: blue;
+}
+
+.trilhas {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    position: relative;
+    width: 20vw;
+}
+
+@media (max-width: 774px) {
+    .topo {
+        align-items: center;
+    }
+
+    .imagem {
+        margin-right: 5vw;
+        width: 17vw;
+    }
+
+    .links a {
+        margin-top: 10px;
+        font-size: 2vw;
+    }
+
+    .titulo {
+        font-size: 3vw;
+    }
+
+    .formulario {
+        flex-direction: column;
+        width: 60%;
+        height: 76%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .formulario__conteudo {
+        font-size: 1.2vw;
+        margin-left: 5vw;
+    }
+
+    form input {
+        width: 90%;
+        height: 7vh;
+        font-size: 3vw;
+    }
+
+    a {
+        margin-top: 1vh;
+        font-size: 2vw;
+        display: inline-block;
+
+    }
+
+    .trilhas {
+        display: none;
+    }
+}

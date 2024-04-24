@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inova Maranhão - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo">
+        <img src="templates/LOGO_GOV_MA_2023_MAIOR.png" alt="Logo do Governo" class="imagem">
+
+        <div class="links">
+            <a href=#>Pagina Inicial</a>
+            <a href=#>Serviços</a>
+            <a href=#>Ajuda</a>
+            <a href=#>Sobre nós</a>
+        </div>
+    </header>
+
+    <main class="formulario">
+        <section>
+            <h1 class="titulo">Bem vindo(a) à tela de Cadastro</h1>
+            <form class="formulario__conteudo">
+                <input id="campo_nome" type="text" placeholder="  Nome" required>
+                <input id="campo_cpf" type="text" placeholder="  CPF: XXX.XXX.XXX-XX" required
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \>
+                <input id="campo_telefone" type="tel" placeholder="  Telefone: (XX)XXXX-XXXX" required size="12"
+                    minlength="8" maxlength="14" pattern="[0-9]{2}
+                [0-9]{4}-[0-9]{4}">
+                <input id="campo_email" type="email" placeholder="  Email" required>
+                <input id="campo_senha" type="password" placeholder="  Senha" required minlength="8">
+                <input id="campo_cep" type="text" placeholder="  CEP: XXXXX-XXX" required pattern="[0-9]{5}-[0-9]{3}">
+                <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sabe o seu
+                    CEP?</a><br>
+                <a href="index.html">Já tem cadastro?Faça login</a>
+                <div class="formulario_botao">
+                    <input type="submit" value="Cadastre-se">
+                </div>
+            </form>
+        </section>
+        <section class="imagem__conteudo">
+            <img src="templates/logo trilhas.png" class="trilhas" alt="logo_trilhas">
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
